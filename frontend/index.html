@@ -4,25 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aadhar Enrollment Management System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>Aadhar Enrollement Management System</h1>
-    </div>
-    <div>
-        <h1>Citizen Registration</h1>
-    </div>
 
-    <div class="form">
-        <h1>Register Here!</h1>
-        <form action="">
-            <label for="name">Full name:</label>
-            <input type="text" id="name" name="Name">
-            <br><br>
-            <label for="citizen_id">Citizen_Id:</label>
-            <input type="text" name="citizen_id" id="citizen_id">
-            <label for=""></label>
-        </form>
+    <div class="top">
+        <h1>Aadhaar Enrollment Management System</h1>
     </div>
+    <div class="container">
+        <h2>Citizen Registration</h2>
+        <h3>Register Here!</h3>
+
+        <form id="registrationform">
+           <!-- for the citien name  -->
+            <label for="citizenname">Citizen name:</label>
+            <input type="text"
+            id="citizenname"
+            name="citizenname"
+            required>
+            <br><br>
+
+            <!-- Date of birth -->
+            <label for="DOB">Date of birth:</label>
+            <input type="date" name="DOB" id="DOB" required>
+            <br><br>
+
+            <!-- gender -->
+            <label for="gender">Gender</label>
+           <select name="gender" id="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="other">Other</option>
+           </select>
+           <br><br>
+
+           <!-- mobile -->
+           <label for="mobile">Mobile Number: +91</label>
+           <input type="tel"
+           id="mobile"
+           name="mobile"
+           maxlength="10"
+           required>
+
+           <br><br>
+
+           <!-- center  -->
+           <label for="center">Enrollement Center</label>
+           <select name="center" id="center" required>
+            <option value="">Select Enrollment Center</option>
+            <option value="1">Vijay Nagar Enrollment Center</option>
+            <option value="2">Rajwada Enrollment Center</option>
+            <option value="3">Bhopal Enrollment Center</option>
+           </select>
+         <br><br>
+
+
+         <!-- submit -->
+         <button type="submit">Register</button>
+           
+
+        </form>
+   
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
